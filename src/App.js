@@ -1,12 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import UseState from './Hooks/UseState/UseState';
+import UseCallBack from './Hooks/UseCallBack/UseCallBack';
+import { UseContext } from './Hooks/UseContext/UseContext';
+import DataProvider from './DataMapping/Provider';
+// import UseState from './Hooks/UseState/UseState';
+// import UseMemo from './Hooks/UseMemo/UseMemo';
 
 function App() {
   return (
-    <>
-      <UseState/>
-    </>
+    <DataProvider>
+
+      {/* <UseState/> */}
+      {/* <UseMemo/> */}
+      {/* <UseCallBack/> */}
+      <UseContext/>
+
+    </DataProvider>
   );
 }
 
